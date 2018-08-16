@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="viewport"content="width-device-width,initial-scale-1">
+    <title></title>
+    <link rel="stylesheet" href="slider.css">
+  </head>
+  <body>
+
+    <div class="slidecontainer">
+      <input type="range" min="1" max="5" step="1" value="1" class="slider" id="myRange">
+      <p class="center"> I am feeling - <span id="demo"></span></p>
+    </div>
+
+  <script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function(){
+    output.innerHTML = this.value;}
+  </script>
+
+
+  <div class="center">
+
+    <button type="button" onclick="alert('Hello world!')">Okay</button>
+  </div>
+  </body>
+</html>
