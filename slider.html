@@ -6,25 +6,43 @@
     <link rel="stylesheet" href="slider.css">
   </head>
   <body>
-
     <div class="slidecontainer">
       <input type="range" min="1" max="5" step="1" value="1" class="slider" id="myRange">
-      <p class="center"> I am feeling - <span id="demo"></span></p>
+      <p class="center"> Today I am feeling like a <span id="demo"></span> . </p>
     </div>
 
-  <script>
-  var slider = document.getElementById("myRange");
-  var output = document.getElementById("demo");
-  output.innerHTML = slider.value;
+    <center><button type="button" onclick="show_message()">Okay</button></center>
 
-  slider.oninput = function(){
-    output.innerHTML = this.value;}
-  </script>
+    <center><div id="message"></center>
+    </div>
+
+    <script>
+      var feelings_value = 1;
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function(){
+        feelings_value = this.value;
+        output.innerHTML = this.value;}
+
+      function clear_message() {
+        x = document.getElementById("message");
+        x.innerHTML = "";
+      }
+
+      function show_message() {
+        x = document.getElementById("message");
+        x.innerHTML = "You are feeling " + feelings_value + " today? Are you sure?<br>" + "<center><button type='button' onclick='show_message2()'>Yes</button><button type='button'onclick='clear_message()'>No</button></center>";
+      }
+
+      function show_message2() {
+        x = document.getElementById("message");
+        x.innerHTML = "Because you are feeling " + feelings_value + ", this is the recommended playlist for you.";
+      }
+    </script>
 
 
-  <div class="center">
 
-    <button type="button" onclick="alert('Hello world!')">Okay</button>
-  </div>
   </body>
 </html>
