@@ -1,3 +1,7 @@
+body{text-align: center;}
+
+
+
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -28,12 +32,6 @@
     cursor: pointer;
 }
 
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML=slider.value;
-slider.oninput = function(){
-  output.innerHTML = this.value;
-}
 
 .center {
   margin-left: auto;
@@ -41,3 +39,60 @@ slider.oninput = function(){
   text-align: center;
 
 }
+
+#message {
+  background-color: lightblue;
+  width: 300px;
+  border: 25px solid lightblue;
+  padding: 25px;
+  margin: 25px;
+}
+
+.button {
+    background-color:lightblue;
+    border: black solid 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color:lightblue;
+    border: black solid 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color:lightblue;
+    border: black solid 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button{
+      background-color: hsla(0, 100%, 70%, 0.3);
+      border: black solid 1px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px
+  }
