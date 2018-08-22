@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{text-align: center;}
 
 
@@ -96,3 +97,50 @@ button{
       display: inline-block;
       font-size: 16px
   }
+=======
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+#message {
+  background-color: lightblue;
+  width: 300px;
+  border: 25px solid lightblue;
+  padding: 25px;
+  margin: 25px;
+}
+>>>>>>> c2905b224219d8e28cdccaa470d5dc1fd9bc7097
