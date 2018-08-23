@@ -1,7 +1,13 @@
-<<<<<<< HEAD
-body{text-align: center;}
-
-
+body {
+  background-image: url("https://i.imgur.com/Nbi7bYI.jpg");
+  text-align: center;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  text-align: center;
+}
 
 .slider {
     -webkit-appearance: none;
@@ -97,7 +103,6 @@ button{
       display: inline-block;
       font-size: 16px
   }
-=======
 .slider {
     -webkit-appearance: none;
     width: 100%;
@@ -143,4 +148,3 @@ button{
   padding: 25px;
   margin: 25px;
 }
->>>>>>> c2905b224219d8e28cdccaa470d5dc1fd9bc7097
